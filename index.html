@@ -18,12 +18,19 @@
       <div>
         <a class="text-3xl font-bold" href="#" alt="logo">Real Estate</a>
       </div>
-      <nav class="space-x-5 text-xl sm:hidden">
+      <nav id="NavBar"
+        class="space-x-5 text-xl sm:hidden sm:fixed sm:z-10 sm:inset-0 sm:space-x-0 sm:h-screen sm:text-center sm:justify-center sm:text-3xl sm:flex-col sm:bg-yellow-900 ">
+        <button id="NavClose" class="hidden sm:block sm:absolute sm:top-8 sm:right-8">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
         <a class="hover:text-yellow-200" href="#home">Home</a>
-        <a class="hover:text-yellow-200" href="#about">About</a>
-        <a class="hover:text-yellow-200" href="#properties">Properties</a>
-        <a class="hover:text-yellow-200" href="#blog">Blog</a>
-        <a class="px-5 py-2 text-yellow-900 transition duration-300 bg-yellow-300 shadow rounded-tr-2xl hover:bg-yellow-400"
+        <a class="hover:text-yellow-200 sm:mt-6" href="#about">About</a>
+        <a class="hover:text-yellow-200 sm:mt-6" href="#properties">Properties</a>
+        <a class="hover:text-yellow-200 sm:mt-6" href="#blog">Blog</a>
+        <a class="px-5 py-2 text-yellow-900 transition duration-300 bg-yellow-300 shadow rounded-tr-2xl hover:bg-yellow-400 sm:bg-yellow-900 sm:shadow-none sm:text-yellow-50 sm:mt-6"
           href="#contact">Contact
           us</a>
       </nav>
