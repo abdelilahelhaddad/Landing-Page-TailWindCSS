@@ -6,12 +6,12 @@ const NavBar = document.querySelector('#NavBar');
 
 NavBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  NavBar.classList.add('sm:flex');
-  NavBar.classList.remove('sm:hidden');
+  NavBar.classList.add('md:flex');
+  NavBar.classList.remove('md:hidden');
 });
 
 NavClose.addEventListener('click', (e) => {
   e.preventDefault();
-  NavBar.classList.add('sm:hidden');
-  NavBar.classList.remove('sm:flex');
+  NavBar.classList.add('md:hidden');
+  NavBar.classList.remove('md:flex');
 });
