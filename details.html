@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page TailWindCSS</title>
+</head>
+
+<body class="font-sans">
+  <!--====================================================================================-->
+  <!--==============================//Navbar + Hero Page//================================-->
+  <!--====================================================================================-->
+  <header class="relative bg-yellow-900">
+    <div class="container relative flex justify-between px-6 py-6 mx-auto font-semibold text-yellow-50">
+      <div>
+        <a class="text-3xl font-bold" href="#" alt="logo">Real Estate</a>
+      </div>
+      <nav id="NavBar"
+        class="space-x-5 text-xl md:hidden md:fixed md:z-10 md:inset-0 md:space-x-0 md:h-screen md:text-center md:justify-center md:text-3xl md:flex-col md:bg-yellow-900 ">
+        <button id="NavClose" class="hidden md:block md:absolute md:top-8 md:right-8">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+        <a class="hover:text-yellow-200" href="#home">Home</a>
+        <a class="hover:text-yellow-200 md:mt-6" href="#about">About</a>
+        <a class="hover:text-yellow-200 md:mt-6" href="#properties">Properties</a>
+        <a class="hover:text-yellow-200 md:mt-6" href="#blog">Blog</a>
+        <a class="px-5 py-2 text-yellow-900 transition duration-300 bg-yellow-300 shadow rounded-tr-2xl hover:bg-yellow-400 md:bg-yellow-900 md:shadow-none md:text-yellow-50 md:mt-6"
+          href="#contact">Contact
+          us</a>
+      </nav>
+      <button id="NavBtn" class="hidden md:block">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </header>
+  <!--====================================================================================-->
+  <!--====================================//Footer//======================================-->
+  <!--====================================================================================-->
+  <footer class="px-6 py-6 bg-yellow-900">
+    <div class="container relative flex flex-col justify-between px-6 py-6 mx-auto font-semibold">
+      <div class="flex justify-between w-full border-b-2 border-yellow-700 pb-14 md:flex-col md:text-center">
+        <h1 class="text-5xl text-yellow-50 md:text-4xl">Make your dreams a <span class="text-yellow-300">reality</span>
+        </h1>
+        <a href="#"
+          class="inline-flex px-4 py-3 text-xl text-yellow-900 transition duration-300 bg-yellow-300 shadow rounded-tr-2xl hover:bg-yellow-400 md:mt-6 md:mx-auto md:w-max">Work
+          with us
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mt-1 ml-3" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+      </div>
+      <div class="grid grid-cols-4 gap-14 my-14 md:grid-cols-2 sm:grid-cols-1 md:text-xl md:text-center">
+        <div>
+          <a class="text-3xl font-bold text-yellow-50 md:text-4xl" href="#" alt="Logo">Real Estate</a>
+          <div class="flex mt-6 md:justify-center">
+            <a href="" class="mr-8 transform hover:scale-125 sm:mr-0"><img src="/icon-facebook.svg" alt="Facebook"></a>
+            <a href="" class="mr-8 transform hover:scale-125 sm:ml-8"><img src="/icon-twitter.svg" alt="Twitter"></a>
+            <a href="" class="mr-8 transform hover:scale-125 sm:mr-0"><img src="/icon-instagram.svg"
+                alt="Instagram"></a>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <h1 class="mb-2 text-lg text-yellow-50 sm:text-2xl">Column Heading</h1>
+          <a href="" class="font-normal text-yellow-200 hover:text-yellow-400">Link goes here</a>
+          <a href="" class="font-normal text-yellow-200 hover:text-yellow-400">Link goes here</a>
+          <a href="" class="font-normal text-yellow-200 hover:text-yellow-400">Link goes here</a>
+          <a href="" class="font-normal text-yellow-200 hover:text-yellow-400">Link goes here</a>
+        </div>
+        <div class="flex flex-col">
+          <h1 class="mb-2 text-lg text-yellow-50 sm:text-2xl">Column Heading</h1>
+          <a href="" class="font-normal text-yellow-200 hover:text-yellow-400">Link goes here</a>
+          <a href="" class="font-normal text-yellow-200 hover:text-yellow-400">Link goes here</a>
+          <a href="" class="font-normal text-yellow-200 hover:text-yellow-400">Link goes here</a>
+          <a href="" class="font-normal text-yellow-200 hover:text-yellow-400">Link goes here</a>
+        </div>
+        <div class="flex flex-col">
+          <h1 class="mb-2 text-lg text-yellow-50 sm:text-2xl">Column Heading</h1>
+          <a href="" class="font-normal text-yellow-200 hover:text-yellow-400">Link goes here</a>
+          <a href="" class="font-normal text-yellow-200 hover:text-yellow-400">Link goes here</a>
+          <a href="" class="font-normal text-yellow-200 hover:text-yellow-400">Link goes here</a>
+          <a href="" class="font-normal text-yellow-200 hover:text-yellow-400">Link goes here</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
