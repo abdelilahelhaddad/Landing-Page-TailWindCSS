@@ -1,1 +1,0 @@
-const e=document.querySelector("#NavBtn"),t=document.querySelector("#NavClose"),d=document.querySelector("#NavBar");e.addEventListener("click",(e=>{e.preventDefault(),d.classList.add("md:flex"),d.classList.remove("md:hidden")})),t.addEventListener("click",(e=>{e.preventDefault(),d.classList.add("md:hidden"),d.classList.remove("md:flex")}));
