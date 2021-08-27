@@ -46,30 +46,33 @@
   <main id="details">
     <section class="bg-gray-200">
       <div class="container flex flex-col px-6 font-semibold py-14 text-yellow-50">
-        <div class="flex justify-between w-full p-6 mx-auto mb-20 text-gray-800 bg-white rounded-xl">
-          <div class="text-lg text-left">
-            <h1 class="text-3xl">Address</h1>
-            <p class="">Real Estate Company</p>
-            <p>4877 Spruce Drive West Newton, PA 15089</p>
-            <p>+1 (555) 555-5555</p>
-            <p>contact@realestate.com</p>
+        <h1 class="mb-12 text-5xl font-bold text-center text-gray-800">Contact Us</h1>
+        <div class="flex justify-between w-4/5 mx-auto mb-20 text-gray-800 bg-white rounded-xl md:flex-col">
+          <div class="w-1/3 p-6 text-lg font-bold text-left border-r-2">
+            <h1 class="mb-12 text-3xl md:text-center">Address:</h1>
+            <p class="mt-5">Company Name: Real Estate</p>
+            <p class="mt-5">Address: 4877 Spruce Drive West Newton, PA 15089</p>
+            <p class="mt-5">Phone: +1 (555) 555-5555</p>
+            <p class="mt-5">Email: contact@realestate.com</p>
           </div>
-          <div class="text-right">
-            <h1 class="text-3xl">Where We Are</h1>
-            <div id="map" class="w-full h-48"></div>
+          <div class="w-2/3 p-6 font-bold text-right md:mt-8">
+            <h1 class="mb-12 text-3xl text-center">Where We Are:</h1>
+            <iframe class="flex-1 w-full h-96"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57492.52171348263!2d-80.22609982089844!3d25.761227400000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b69cbf4f0519%3A0x2eed843e3b12417!2sThe%20World%20Realty!5e0!3m2!1sen!2sus!4v1630010201601!5m2!1sen!2sus"
+              style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
         <div id="card" class="w-4/5 p-5 mx-auto text-gray-900 bg-white rounded-xl">
           <h1 class="mb-8 text-3xl font-bold text-center">Send Us a Message</h1>
           <form class="flex flex-col mt-2">
-            <div class="flex w-full gap-6 mb-5">
-              <div class="w-1/2">
+            <div class="flex w-full gap-6 mb-5 md:flex-col">
+              <div class="w-1/2 md:w-full">
                 <label for="name">Name:</label>
                 <input
                   class="w-full p-4 my-1 font-semibold placeholder-gray-500 border-2 border-gray-200 outline-none rounded-xl"
                   type="text" name="name" id="name" placeholder="Name">
               </div>
-              <div class="w-1/2">
+              <div class="w-1/2 md:w-full">
                 <label for="email">Email:</label>
                 <input
                   class="w-full p-4 my-1 font-semibold placeholder-gray-500 border-2 border-gray-200 outline-none rounded-xl"
